@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Proza Libre", sans-serif;
+}
+
+.smooth {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.home {
+    background: #20bab5;
+    height: 100vh;
+    margin-bottom: 0;
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    margin-right: 30px;
+    padding-top: 10px;
+    position: fixed;
+    right: -29px;
+}
+
+.navbar li {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 20px;
+    padding: 15px 25px;
+    list-style: none;
+    background: transparent;
+    transition: background 500ms;
+    border-radius: 10px;
+}
+
+.navbar li:hover {
+    background: white;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Corner-1,2 top-left*/
+.corners {
+    position: fixed;
+    z-index: 5;
+}
+
+.corner-1 {
+    margin-left: 20px;
+    width: 20px;
+    height: 150px;
+    background: white;
+    position: relative;
+    top: 20px;
+}
+
+.corner-2 {
+    margin-left: 20px;
+    width: 150px;
+    height: 20px;
+    background: white;
+    position: relative;
+    top: -130px;
+}
+
+/* Corner-3,4 bottom-right */
+.corner-3 {
+    margin-left: 20px;
+    width: 150px;
+    height: 20px;
+    background: white;
+    position: relative;
+    top: 450px;
+    left: 1150px;
+}
+
+.corner-4 {
+    margin-left: 20px;
+    width: 20px;
+    height: 150px;
+    background: white;
+    position: relative;
+    top: 300px;
+    left: 1280px;
+}
+
+/*My name*/
+
+.name {
+    margin-left: 80px;
+}
+
+.name1 {
+    font-size: 5rem;
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+
+.name2 {
+    font-size: 5rem;
+}
+
+.name span {
+    color: #ffcb3b;
+    transition: 500ms;
+    font-size: 6.3rem;
+}
+
+.name span:hover {
+    color: white;
+}
+
+.name3 span {
+    margin-left: 190px;
+}
+
+/* image man*/
+#man1 {
+    height: 10px;
+}
+
+#man1 img {
+    width: 500px;
+    position: relative;
+    top: -350px;
+    left: 750px;
+    padding-bottom: 0;
+}
+
+.scroll {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.scroll span {
+    font-size: small;
+}
+
+.scroll span i {
+    font-size: 1.5rem;
+    animation: front-back 1000ms infinite;
+    color: #ffcb3b;
+}
+
+.scroll span a {
+    color: inherit;
+}
+
+@keyframes front-back {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background: yellow;
+    padding-top: 28px;
+    width: 100vw;
+}
+
+.about img {
+    width: 600px;
+    padding: 0 0 0 50px;
+}
+
+.about-me {
+    margin-top: -300px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    letter-spacing: 1px;
+}
+
+.about-me h1 {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    transition: all 1000ms ease-in-out;
+}
+
+.about-me p {
+    margin-top: 100px;
+}
+
+.about-me:hover h1 {
+    transform: scale(1.5);
+    text-decoration: underline;
+}
+
+.skills {
+    height: 100vh;
+    width: 1349px;
+    background: #f5a147;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.icons {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icons span {
+    font-size: 20px;
+    font-weight: 800;
+    transition: transform 0.5s ease-in-out;
+}
+
+.icons span:hover {
+    transform: scale(1.2);
+}
+
+.icons span,
+.icons i {
+    text-align: center;
+    display: block;
+}
+
+.icons span i {
+    font-size: 6rem;
+    padding: 30px 30px 15px 30px;
+    display: block;
+    margin-left: 15px;
+}
+
+.tech {
+    background: rgb(104, 104, 255);
+    width: 50%;
+    height: 100vh;
+    padding-left: 20px;
+    padding-top: 80px;
+}
+
+.tech h1 {
+    text-align: center;
+    margin-left: -55px;
+    transition: all 1s ease-in-out;
+}
+
+.tech h1:hover {
+    transform: scale(1.5);
+    text-decoration: underline;
+}
+
+.fa-html5 {
+    color: rgb(255, 199, 16);
+}
+
+.fa-css3-alt {
+    color: #20bab5;
+}
+
+.fa-bootstrap {
+    color: purple;
+}
+
+.fa-js {
+    color: yellow;
+}
+
+.fa-react {
+    color: rgb(9, 9, 65);
+}
+
+.fa-git-alt {
+    color: rgb(184, 119, 0);
+}
+
+.fa-github {
+    color: black;
+}
+
+.anchor-tag {
+    padding-left: 100px;
+    padding-top: 80px;
+}
+
+.anchor-tag h1 {
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.anchor-tag h1:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.anchor-tag h1 span {
+    color: white;
+}
+
+.anchor-tag h3 {
+    margin-top: 90px;
+    margin-bottom: -50px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: 1px solid;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 13px 11px 23px -4px rgba(0, 0, 0, 0.75);
+}
+
+.anchor-tag a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.anchor-tag a i {
+    margin-right: 9px;
+}
+
+.anchor-tag h3:hover,
+.anchor-tag button:hover {
+    background: white;
+    transform: scale(1.2);
+}
+
+.anchor-tag button {
+    position: relative;
+    top: 150px;
+    left: 25%;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+    animation: button-up 1s infinite;
+    box-shadow: 13px 11px 23px -4px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes button-up {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.anchor-tag button a {
+    display: flex;
+    align-items: center;
+}
+
+.anchor-tag button a i {
+    margin-left: 9px;
+}
+
+.footer {
+    width: 100vw;
+    height: 40vh;
+    background: wheat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    position: relative;
+    top: 50px;
+}
+
+.footer h1 {
+    position: relative;
+    top: -30px;
+    margin: 0 auto;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 90px;
+}
+
+.footer-icons span {
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.footer-icons span:hover {
+    transform: scale(1.2);
+}
+
+.footer-icons span a {
+    margin-right: 80px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+}
+
+.footer-icons span i {
+    font-size: 2.5rem;
+    display: block;
+    padding: 15px;
+}
+
+.fa-twitter {
+    color: rgb(84, 191, 233);
+}
+
+.fa-linkedin-in {
+    color: blue;
+}
+
+.fa-medium {
+    color: black;
+}
